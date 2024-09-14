@@ -1,0 +1,26 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    int num1, num2;
+
+    // Input
+    cout << "Enter 2 positive whole numbers (use space): ";
+    cin >> num1 >> num2;
+
+    // Process: counting sum
+    int sum = num1 + num2;
+
+    // Showing output
+    cout << "The sum of " << num1 << " and " << num2 << " is " << sum << endl;
+
+    // Use conditional statement to check if the sum is odd or even
+    if (sum % 2 == 0) {
+        cout << "The sum is an even number" << endl;
+    } else {
+        cout << "The sum is an odd number" << endl;
+    }
+
+    return 0;
+}
